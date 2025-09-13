@@ -1,28 +1,40 @@
+# FAQ Chatbot Landingpage  
 
-FAQ Chatbot Landingpage
-🌐 Live-Demo: https://chatbot-kaufen.com
-Dies ist eine responsive Landingpage für einen FAQ-Chatbot, erstellt mit HTML5 und Tailwind CSS.
-🚀 Features
-•	Sticky Navigation
-Menü bleibt beim Scrollen oben fixiert, inkl. mobilem Burger-Menü.
-•	Hero Section
-Starker Einstieg mit Claim, Call-to-Action-Buttons und Chat-Mockup.
-•	Vorteile
-Übersicht der wichtigsten Benefits für Kunden.
-•	So funktioniert’s
-Vier einfache Schritte von der Analyse bis zum Go-Live.
-•	Preise
-Vergleich von Basic-, Pro- und Enterprise-Paket mit Buttons, die automatisch das Kontaktformular ausfüllen.
-•	FAQ
-Häufige Fragen mit aufklappbaren Antworten.
-•	Kontaktformular
-Formular mit Name, E-Mail, Paket (automatisch vorbelegt) und Nachricht.
-→ Aktuell als mailto: implementiert.
-→ Optional erweiterbar mit PHP, Node.js oder einem Backend deiner Wahl.
-•	Success Popup
-Nach dem Absenden erscheint eine Bestätigungsmeldung („Danke für Ihre Anfrage ✅“).
-•	Footer
-Mit Kontaktdaten, Links und Copyright.
+🌐 Live-Demo: [https://chatbot-kaufen.com](https://chatbot-kaufen.com)  
+
+Dies ist eine responsive Landingpage für einen **FAQ-Chatbot**, erstellt mit **HTML5** und **Tailwind CSS**.  
+
+## 🚀 Features  
+
+- **Sticky Navigation**  
+  Menü bleibt beim Scrollen oben fixiert, inkl. mobilem Burger-Menü.  
+
+- **Hero Section**  
+  Starker Einstieg mit Claim, Call-to-Action-Buttons und Chat-Mockup.  
+
+- **Vorteile**  
+  Übersicht der wichtigsten Benefits für Kunden.  
+
+- **So funktioniert’s**  
+  Vier einfache Schritte von der Analyse bis zum Go-Live.  
+
+- **Preise**  
+  Vergleich von Basic-, Pro- und Enterprise-Paket mit Buttons, die automatisch das Kontaktformular ausfüllen.  
+
+- **FAQ**  
+  Häufige Fragen mit aufklappbaren Antworten.  
+
+- **Kontaktformular**  
+  Formular mit Name, E-Mail, Paket (automatisch vorbelegt) und Nachricht.  
+  → Aktuell als `mailto:` implementiert.  
+  → Optional erweiterbar mit PHP, Node.js oder einem Backend deiner Wahl.  
+
+- **Success Popup**  
+  Nach dem Absenden erscheint eine Bestätigungsmeldung („Danke für Ihre Anfrage ✅“).  
+
+- **Footer**  
+  Mit Kontaktdaten, Links und Copyright.  
+
 ________________________________________
 📂 Struktur
 •	index.html → Hauptdatei (Landingpage)
