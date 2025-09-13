@@ -77,26 +77,52 @@
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     <div class="text-2xl font-bold text-blue-600">Chatbot</div>
     <nav class="hidden md:flex space-x-6 font-medium text-gray-700">
-      <a href="/" class="hover:text-blue-600">Startseite</a>
+      <a href="#startseite" class="hover:text-blue-600">Startseite</a>
       <a href="#vorteile" class="hover:text-blue-600">Vorteile</a>
       <a href="#funktioniert" class="hover:text-blue-600">So funktioniert’s</a>
       <a href="#preise" class="hover:text-blue-600">Preise</a>
       <a href="#faq" class="hover:text-blue-600">FAQ</a>
       <a href="#kontakt" class="hover:text-blue-600">Kontakt</a>
     </nav>
-    <button class="md:hidden text-gray-700 text-2xl" onclick="toggleMenu()">☰</button>
+    <!-- Button mit ID für JS -->
+    <button id="menu-btn" class="md:hidden text-gray-700 text-2xl" onclick="toggleMenu()">☰</button>
   </div>
   <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
     <nav class="flex flex-col px-6 py-4 space-y-4 font-medium text-gray-700">
-      <a href="/" class="hover:text-blue-600" onclick="toggleMenu()">Startseite</a>
-      <a href="#vorteile" class="hover:text-blue-600" onclick="toggleMenu()">Vorteile</a>
-      <a href="#funktioniert" class="hover:text-blue-600" onclick="toggleMenu()">So funktioniert’s</a>
-      <a href="#preise" class="hover:text-blue-600" onclick="toggleMenu()">Preise</a>
-      <a href="#faq" class="hover:text-blue-600" onclick="toggleMenu()">FAQ</a>
-      <a href="#kontakt" class="hover:text-blue-600" onclick="toggleMenu()">Kontakt</a>
+      <a href="#startseite" class="hover:text-blue-600">Startseite</a>
+      <a href="#vorteile" class="hover:text-blue-600">Vorteile</a>
+      <a href="#funktioniert" class="hover:text-blue-600">So funktioniert’s</a>
+      <a href="#preise" class="hover:text-blue-600">Preise</a>
+      <a href="#faq" class="hover:text-blue-600">FAQ</a>
+      <a href="#kontakt" class="hover:text-blue-600">Kontakt</a>
     </nav>
   </div>
 </header>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const btn = document.getElementById('menu-btn');
+    menu.classList.toggle('hidden');
+
+    // Icon wechseln
+    if (menu.classList.contains('hidden')) {
+      btn.textContent = "☰"; // Hamburger
+    } else {
+      btn.textContent = "✖"; // Kreuz
+    }
+  }
+
+  // Menü beim Klick auf Link schließen
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("#mobile-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("mobile-menu").classList.add("hidden");
+        document.getElementById("menu-btn").textContent = "☰";
+      });
+    });
+  });
+</script>
 
 <main class="pt-20">
 
