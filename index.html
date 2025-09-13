@@ -1,5 +1,56 @@
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- SEO-Meta -->
+  <title>FAQ Chatbot kaufen – Automatisierte Kundenkommunikation</title>
+  <meta name="description" content="Kaufen Sie einen smarten FAQ-Chatbot für Ihre Website. Automatisierte Antworten 24/7, individuelle Anpassung und einfache Integration.">
+
+  <!-- Open Graph (für Social Media) -->
+  <meta property="og:title" content="FAQ Chatbot kaufen – Automatisierte Kundenkommunikation">
+  <meta property="og:description" content="Ihr Chatbot beantwortet Kundenfragen rund um die Uhr – professionell, individuell und DSGVO-konform.">
+  <meta property="og:url" content="https://chatbot-kaufen.com">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://chatbot-kaufen.com/images/preview.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+
+  <!-- JS -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+    function showSuccess(event) {
+      event.preventDefault();
+      document.getElementById('success-popup').classList.remove('hidden');
+      setTimeout(() => {
+        document.getElementById('success-popup').classList.add('hidden');
+      }, 4000);
+      event.target.reset();
+    }
+    function acceptCookies() {
+      document.getElementById('cookie-banner').classList.add('hidden');
+      localStorage.setItem('cookiesAccepted', 'true');
+    }
+    window.onload = function() {
+      if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookie-banner').classList.remove('hidden');
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 font-sans">
+  
 <!-- Navigation -->
 <header class="fixed w-full bg-white shadow-md z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -235,6 +286,12 @@
     <h3 class="text-xl font-bold text-gray-900">Danke für Ihre Anfrage!</h3>
     <p class="mt-2 text-gray-600">Wir melden uns so schnell wie möglich bei Ihnen.</p>
   </div>
+</div>
+
+<!-- Cookie Banner -->
+<div id="cookie-banner" class="hidden fixed bottom-0 inset-x-0 bg-gray-900 text-white p-4 text-center z-50">
+  Diese Website verwendet Cookies, um die Benutzerfreundlichkeit zu verbessern.
+  <button onclick="acceptCookies()" class="ml-4 bg-blue-600 px-4 py-2 rounded">OK</button>
 </div>
 
 <!-- Footer -->
