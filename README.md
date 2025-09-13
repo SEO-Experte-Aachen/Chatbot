@@ -1,3 +1,4 @@
+
 FAQ Chatbot Landingpage
 🌐 Live-Demo: https://chatbot-kaufen.com
 Dies ist eine responsive Landingpage für einen FAQ-Chatbot, erstellt mit HTML5 und Tailwind CSS.
@@ -22,12 +23,14 @@ Formular mit Name, E-Mail, Paket (automatisch vorbelegt) und Nachricht.
 Nach dem Absenden erscheint eine Bestätigungsmeldung („Danke für Ihre Anfrage ✅“).
 •	Footer
 Mit Kontaktdaten, Links und Copyright.
+---
 ________________________________________
 📂 Struktur
 •	index.html → Hauptdatei (Landingpage)
 
 •	README.md → Diese Anleitung
 ________________________________________
+---
 🛠 Installation
 1.	Repository/Projektordner auf deinen Webserver laden oder lokal öffnen.
 
