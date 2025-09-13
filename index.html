@@ -84,29 +84,29 @@
       <a href="#faq" class="hover:text-blue-600">FAQ</a>
       <a href="#kontakt" class="hover:text-blue-600">Kontakt</a>
     </nav>
-    <!-- Button mit ID für JS -->
+    <!-- Button mit ID -->
     <button id="menu-btn" class="md:hidden text-gray-700 text-2xl" onclick="toggleMenu()">☰</button>
   </div>
   <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
     <nav class="flex flex-col px-6 py-4 space-y-4 font-medium text-gray-700">
-      <a href="#startseite" class="hover:text-blue-600">Startseite</a>
-      <a href="#vorteile" class="hover:text-blue-600">Vorteile</a>
-      <a href="#funktioniert" class="hover:text-blue-600">So funktioniert’s</a>
-      <a href="#preise" class="hover:text-blue-600">Preise</a>
-      <a href="#faq" class="hover:text-blue-600">FAQ</a>
-      <a href="#kontakt" class="hover:text-blue-600">Kontakt</a>
+      <a href="#startseite">Startseite</a>
+      <a href="#vorteile">Vorteile</a>
+      <a href="#funktioniert">So funktioniert’s</a>
+      <a href="#preise">Preise</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
   </div>
 </header>
 
 <script>
   function toggleMenu() {
-    const menu = document.getElementById('mobile-menu');
-    const btn = document.getElementById('menu-btn');
-    menu.classList.toggle('hidden');
+    const menu = document.getElementById("mobile-menu");
+    const btn = document.getElementById("menu-btn");
+    menu.classList.toggle("hidden");
 
     // Icon wechseln
-    if (menu.classList.contains('hidden')) {
+    if (menu.classList.contains("hidden")) {
       btn.textContent = "☰"; // Hamburger
     } else {
       btn.textContent = "✖"; // Kreuz
@@ -123,6 +123,7 @@
     });
   });
 </script>
+
 
 <main class="pt-20">
 
